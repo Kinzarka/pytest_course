@@ -9,8 +9,6 @@ driver = webdriver.Firefox()
 def test_login_form():
     driver.get("https://www.saucedemo.com/")
     error_text = "Epic sadface: Sorry, this user has been locked out."
-
-
     user_name = driver.find_element(By.CSS_SELECTOR, 'input[data-test="username"]')
     user_name.send_keys("user")
     password_input = driver.find_element(By.CSS_SELECTOR, 'input[data-test="password"]')

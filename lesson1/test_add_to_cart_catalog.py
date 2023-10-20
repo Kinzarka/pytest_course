@@ -19,7 +19,3 @@ def test_add_to_cart_catalog():
     shopping_cart_badge = driver.find_element(By.CSS_SELECTOR,".shopping_cart_badge")
     assert shopping_cart_badge.is_displayed()
     driver.quit()
-
-
-
-
